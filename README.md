@@ -17,8 +17,18 @@ In this project, the focus would be on the ARIMA model and how it can be used to
 *    We see that the p-value is greater than 0.05 so we cannot reject the Null hypothesis.<br>
 *    The absolute value of -1.359154 is relatively low compared to the critical values, suggesting that the time series is not stationary.
 
-### Eliminate Trend and Seasonality###
-**Apply from statsmodels.tsa.seasonal import seasonal_decompose**
-**Apply logarithm transformation**
+### Eliminate Trend and Seasonality
+*    Apply from statsmodels.tsa.seasonal import seasonal_decompose
+*    Apply logarithm transformation
 
-## Split the Data into Train and Test
+### Split the Data into Train and Test
+90% train and 10% test
+
+### Auto ARIMA
+Use Auto ARIMA function to identify the optimal p,d and q values<br>
+The output indicates that the chosen ARIMA(0,1,0) model is the best fit
+
+### Build Model and plot prediction
+![](Image/6.png)
+
+
