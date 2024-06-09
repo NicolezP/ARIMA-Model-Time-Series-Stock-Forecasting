@@ -12,8 +12,8 @@ In this project, the focus would be on the ARIMA model and how it can be used to
 **Moving Average (MA) Component:** The MA component captures the relationship between an observation and a residual error from a moving average model applied to lagged observations.<br>
 
 ### Checking for Stationarity
-Using statistical tests like the Augmented Dickey-Fuller (ADF) test.
-![](Image/2.png)<br>
+
+![](Image/2.PNG)
 *    We see that the p-value is greater than 0.05 so we cannot reject the Null hypothesis.<br>
 *    The absolute value of -1.359154 is relatively low compared to the critical values, suggesting that the time series is not stationary.
 
