@@ -9,6 +9,16 @@ In this project, the focus would be on the ARIMA model and how it can be used to
 ### ARIMA
 **AutoRegressive (AR) part:**  uses the stock's past prices to predict its future prices. This assumes that past prices have a linear relationship with future prices.<br>
 **Integrated (I) part:** The 'Integrated' part addresses this by differencing the stock price series to remove trends and achieve stationarity.<br>
-**Moving Average (MA) Component:**  This involves modeling the error term as a linear combination of error terms occurring contemporaneously and at various times in the past. The MA component captures the relationship between an observation and a residual error from a moving average model applied to lagged observations.<br>
+**Moving Average (MA) Component:** The MA component captures the relationship between an observation and a residual error from a moving average model applied to lagged observations.<br>
 
-### Check for Stationarity
+### Checking for Stationarity
+Using statistical tests like the Augmented Dickey-Fuller (ADF) test.
+![](Image/2.png)<br>
+*    We see that the p-value is greater than 0.05 so we cannot reject the Null hypothesis.<br>
+*    The absolute value of -1.359154 is relatively low compared to the critical values, suggesting that the time series is not stationary.
+
+### Eliminate Trend and Seasonality###
+**Apply from statsmodels.tsa.seasonal import seasonal_decompose**
+**Apply logarithm transformation**
+
+## Split the Data into Train and Test
